@@ -41,6 +41,7 @@ const LobbyScreen = () => {
         <label htmlFor='email'>Email</label>
         <input type="email" required id="email" value={email} onChange={(e)=> setEmail(e.target.value)} />
         <label htmlFor='room'>Room Number</label>
+        <span className='note'>*Your & your friend should have the same room number</span>
         <input type="text" required id="room" value={room} onChange={(e)=> setRoom(e.target.value)} />
         <div className='join-button'>
         <button>Join</button>
